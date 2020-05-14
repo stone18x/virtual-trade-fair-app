@@ -10,7 +10,8 @@ The roomplaner is taken and adapted from https://github.com/furnishup/blueprint3
 2. Install angular cli: `npm install -g @angular/cli`
 3. Clone this repository. 
 4. Change to the folder where you downloaded the repository. 
-5. Start the webapp: `ng serve`.
+5. Execute `npm install`.
+6. Start the webapp: `ng serve`.
 
 ## Functions
 At the moment two different function types are available.
