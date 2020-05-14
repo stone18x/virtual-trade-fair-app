@@ -1,0 +1,11 @@
+<ngb-carousel *ngIf="galleryEntries">
+    <ng-template *ngFor="let entry of galleryEntries; index as i" ngbSlide>
+        <div class="picsum-img-wrapper">
+            <img [src]="entry.img" class="carousel-image" />
+        </div>
+        <div class="carousel-caption">
+            <h3>{{ entry.header }}</h3>
+            <p>{{ entry.description }}</p>
+        </div>
+    </ng-template>
+</ngb-carousel>

@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import "~bootstrap/scss/bootstrap";
+
+$green: #97bf0d;
+
+html {
+  background-color: darkgray;
+}
+
+body {
+  background-color: darkgray;
+}
+
+.banner {
+  background-color: $green;
+}
+
+.btn-success {
+  @include button-variant(
+    $green,
+    darken($green, 7.5%),
+    darken($green, 10%),
+    lighten($green, 5%),
+    lighten($green, 10%),
+    darken($green, 30%)
+  );
+}

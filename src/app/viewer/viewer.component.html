@@ -1,0 +1,52 @@
+<div class="container-fluid">
+    <div class="row">
+        <div id="content" class="col">
+            <div class="d-flex justify-content-center" *ngIf="!loadingDone">
+                <div class="spinner-border" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </div>
+            <div *ngIf="selectedContent">
+                <h3 id="itemheader">{{ selectedContent.header }}</h3>
+                <p id="itemcontent" class="lead">{{ selectedContent.description }}</p>
+                <button on-click="onClickDetailsButton()" type="button" class="btn btn-success">
+                    Details
+                </button>
+            </div>
+        </div>
+
+        <div class="col-sm-9">
+            <div id="viewer" class="viewer-loading">
+                <div id="camera-controls">
+                    <a class="btn btn-default bottom" href="#" id="move-left">
+                        <i class="fas fa-arrow-left"></i>
+                    </a>
+                    <span class="btn-group-vertical">
+                        <a class="btn btn-default" href="#" id="move-up">
+                            <i class="fas fa-arrow-up"></i>
+                        </a>
+                        <a class="btn btn-default" href="#" id="move-down">
+                            <i class="fas fa-arrow-down"></i>
+                        </a>
+                    </span>
+                    <a class="btn btn-default bottom" href="#" id="move-right">
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#" class="btn btn-default bottom" id="zoom-out">
+                        <i class="fas fa-search-minus"></i>
+                    </a>
+                    <a href="#" class="btn btn-default bottom" id="reset-view">
+                        <i class="fas fa-home"></i>
+                    </a>
+                    <a href="#" class="btn btn-default bottom" id="zoom-in">
+                        <i class="fas fa-search-plus"></i>
+                    </a>
+                </div>
+
+                <div id="floorplanner">
+                    <canvas id="floorplanner-canvas"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

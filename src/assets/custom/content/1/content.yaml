@@ -1,0 +1,15 @@
+content:
+  header: Cheesburger Gallery Software
+  description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+  type: gallery
+details:
+  gallery:
+    - header: Mc Donalds Cheesburger
+      description: Nulla vitae elit libero, a pharetra augue mollis interdum
+      img: mci.jpg
+    - header: Buger King Cheesburger
+      description: Nulla vitae elit libero, a pharetra augue mollis interdum
+      img: burgerking.jpg
+    - header: Five Guys Cheesburger
+      description: Nulla vitae elit libero, a pharetra augue mollis interdum
+      img: fiveguys.jpg
